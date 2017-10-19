@@ -345,8 +345,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var render_1 = __webpack_require__(14);
-var graphics_adapter_1 = __webpack_require__(11);
-var sprite_1 = __webpack_require__(6);
+var graphics_adapter_1 = __webpack_require__(12);
+var sprite_1 = __webpack_require__(7);
 var math_1 = __webpack_require__(0);
 var DefaultGraphicsAdapter = (function (_super) {
     __extends(DefaultGraphicsAdapter, _super);
@@ -477,6 +477,29 @@ exports.DefaultGraphicsAdapter = DefaultGraphicsAdapter;
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__(13));
+__export(__webpack_require__(2));
+__export(__webpack_require__(21));
+__export(__webpack_require__(23));
+__export(__webpack_require__(11));
+__export(__webpack_require__(22));
+__export(__webpack_require__(31));
+__export(__webpack_require__(19));
+__export(__webpack_require__(24));
+__export(__webpack_require__(17));
+__export(__webpack_require__(28));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -628,7 +651,7 @@ exports.CollisionMask = CollisionMask;
 //# sourceMappingURL=collision-mask.js.map
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -645,7 +668,7 @@ exports.isAnimationSprite = isAnimationSprite;
 //# sourceMappingURL=sprite.js.map
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -680,13 +703,13 @@ exports.AudioController = AudioController;
 //# sourceMappingURL=audio-controller.js.map
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var events_1 = __webpack_require__(9);
+var events_1 = __webpack_require__(10);
 var EventQueue = (function () {
     function EventQueue() {
         this.DEBUG_KEYS = false;
@@ -1127,7 +1150,7 @@ exports.EventQueue = EventQueue;
 //# sourceMappingURL=event-queue.js.map
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1158,7 +1181,7 @@ exports.standardGamepadAxisNames = [
 //# sourceMappingURL=events.js.map
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1519,7 +1542,7 @@ exports.GameObject = GameObject;
 //# sourceMappingURL=game-object.js.map
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1532,29 +1555,6 @@ var GraphicsAdapter = (function () {
 }());
 exports.GraphicsAdapter = GraphicsAdapter;
 //# sourceMappingURL=graphics-adapter.js.map
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(13));
-__export(__webpack_require__(2));
-__export(__webpack_require__(21));
-__export(__webpack_require__(23));
-__export(__webpack_require__(10));
-__export(__webpack_require__(22));
-__export(__webpack_require__(31));
-__export(__webpack_require__(19));
-__export(__webpack_require__(24));
-__export(__webpack_require__(17));
-__export(__webpack_require__(28));
-//# sourceMappingURL=index.js.map
 
 /***/ }),
 /* 13 */
@@ -1677,7 +1677,7 @@ exports.ResourceLoader = ResourceLoader;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var sprite_1 = __webpack_require__(6);
+var sprite_1 = __webpack_require__(7);
 var LINE_HEIGHT = 12;
 function fillText(context, text, x, y) {
     var lines = text.split('\n');
@@ -1720,8 +1720,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var engine_1 = __webpack_require__(12);
-var start_scene_1 = __webpack_require__(34);
+var engine_1 = __webpack_require__(5);
+var start_scene_1 = __webpack_require__(35);
 var ProceduralContinentGenerator = (function (_super) {
     __extends(ProceduralContinentGenerator, _super);
     function ProceduralContinentGenerator(framesPerSecond) {
@@ -1756,8 +1756,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var game_object_1 = __webpack_require__(10);
-var merge = __webpack_require__(35);
+var game_object_1 = __webpack_require__(11);
+var merge = __webpack_require__(37);
 var AudioSourceObject = (function (_super) {
     __extends(AudioSourceObject, _super);
     function AudioSourceObject(name, audio, opts) {
@@ -1864,7 +1864,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(16));
-__export(__webpack_require__(7));
+__export(__webpack_require__(8));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -1992,8 +1992,8 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(3));
-__export(__webpack_require__(8));
 __export(__webpack_require__(9));
+__export(__webpack_require__(10));
 __export(__webpack_require__(20));
 __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
@@ -2425,10 +2425,10 @@ exports.GameScene = GameScene;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var resource_loader_1 = __webpack_require__(13);
-var event_queue_1 = __webpack_require__(8);
+var event_queue_1 = __webpack_require__(9);
 var event_emitter_1 = __webpack_require__(3);
 var default_graphics_adapter_1 = __webpack_require__(4);
-var audio_controller_1 = __webpack_require__(7);
+var audio_controller_1 = __webpack_require__(8);
 ;
 var Game = (function () {
     function Game(options) {
@@ -2711,7 +2711,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(11));
+__export(__webpack_require__(12));
 __export(__webpack_require__(4));
 //# sourceMappingURL=index.js.map
 
@@ -2732,7 +2732,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var collision_mask_1 = __webpack_require__(5);
+var collision_mask_1 = __webpack_require__(6);
 var math_1 = __webpack_require__(0);
 var CircleCollisionMask = (function (_super) {
     __extends(CircleCollisionMask, _super);
@@ -2952,7 +2952,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var collision_mask_1 = __webpack_require__(5);
+var collision_mask_1 = __webpack_require__(6);
 var force_generator_1 = __webpack_require__(1);
 var math_1 = __webpack_require__(0);
 var GravityForceGenerator = (function (_super) {
@@ -3005,7 +3005,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(5));
+__export(__webpack_require__(6));
 __export(__webpack_require__(25));
 __export(__webpack_require__(1));
 __export(__webpack_require__(26));
@@ -3116,7 +3116,7 @@ __export(__webpack_require__(30));
 __export(__webpack_require__(0));
 __export(__webpack_require__(32));
 __export(__webpack_require__(14));
-__export(__webpack_require__(6));
+__export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -3182,9 +3182,387 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var engine_1 = __webpack_require__(12);
-var generator_controller_1 = __webpack_require__(38);
+var engine_1 = __webpack_require__(5);
+var delay_1 = __webpack_require__(36);
+var MILLIS_BETWEEN_STAGES = 100;
+var MILLIS_BETWEEN_REPEATS = 50;
+var MILLIS_BETWEEN_PASSES = 10;
+var CELLS_PER_PASS = 65536;
+var SHOULD_WRAP = false;
+var GeneratorController = (function (_super) {
+    __extends(GeneratorController, _super);
+    function GeneratorController() {
+        var _this = _super.call(this, 'GeneratorController', {
+            renderCamera: 'none'
+        }) || this;
+        _this.isGenerating = false;
+        _this.currentColors = new Map();
+        _this.isInPass = false;
+        _this.currentStageIdx = 0;
+        _this.playheadX = 0;
+        _this.playheadY = 0;
+        _this.broke = false;
+        window.generator = _this;
+        return _this;
+    }
+    GeneratorController.prototype.generate = function (stages) {
+        return __awaiter(this, void 0, void 0, function () {
+            var q;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (this.isGenerating)
+                            throw new Error("Can't begin a new generation until the previous one has finished.");
+                        if (!stages || !stages.length)
+                            throw new Error("Can't generate without at least one stage");
+                        this.isGenerating = true;
+                        this.currentColors.clear();
+                        this.current = [[0]];
+                        this.currentWidth = 1;
+                        this.currentHeight = 1;
+                        this.stages = stages;
+                        q = 0;
+                        _a.label = 1;
+                    case 1:
+                        if (!(q < stages.length)) return [3, 5];
+                        return [4, delay_1.delay(MILLIS_BETWEEN_STAGES)];
+                    case 2:
+                        _a.sent();
+                        return [4, this.completeStage(stages[q])];
+                    case 3:
+                        _a.sent();
+                        _a.label = 4;
+                    case 4:
+                        this.currentStageIdx = ++q;
+                        return [3, 1];
+                    case 5:
+                        this.isGenerating = false;
+                        return [2];
+                }
+            });
+        });
+    };
+    GeneratorController.prototype.completeStage = function (stage) {
+        return __awaiter(this, void 0, void 0, function () {
+            var completed, _a, key, totalWeight, _i, _b, choice, q, w, rnd, value, _c, _d, choice, q, w, result, q;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        if (!stage)
+                            throw new Error("Can't generate without a stage");
+                        _a = stage.type;
+                        switch (_a) {
+                            case 'colorize': return [3, 1];
+                            case 'randomize': return [3, 2];
+                            case 'subdivide': return [3, 9];
+                            case 'pass': return [3, 10];
+                            case 'repeat': return [3, 17];
+                        }
+                        return [3, 24];
+                    case 1:
+                        for (key in Object.keys(stage.colors)) {
+                            this.currentColors.set(+key, stage.colors[+key]);
+                        }
+                        return [3, 25];
+                    case 2:
+                        completed = 0;
+                        totalWeight = 0;
+                        for (_i = 0, _b = stage.choose; _i < _b.length; _i++) {
+                            choice = _b[_i];
+                            if (typeof choice === 'number')
+                                totalWeight++;
+                            else
+                                totalWeight += choice.weight;
+                        }
+                        q = 0;
+                        _e.label = 3;
+                    case 3:
+                        if (!(q < this.currentWidth)) return [3, 8];
+                        w = 0;
+                        _e.label = 4;
+                    case 4:
+                        if (!(w < this.currentHeight)) return [3, 7];
+                        completed++;
+                        rnd = Math.random() * totalWeight;
+                        value = -1;
+                        for (_c = 0, _d = stage.choose; _c < _d.length; _c++) {
+                            choice = _d[_c];
+                            if (typeof choice === 'number')
+                                rnd -= 1;
+                            else
+                                rnd -= choice.weight;
+                            if (rnd < 0) {
+                                value = (typeof choice === 'number' ? choice : choice.value);
+                                break;
+                            }
+                        }
+                        if (value === -1)
+                            throw new Error("Something happened... not sure what");
+                        this.set(q, w, value);
+                        if (!(completed > CELLS_PER_PASS)) return [3, 6];
+                        completed = 0;
+                        this.playheadX = q;
+                        this.playheadY = w;
+                        return [4, delay_1.delay(MILLIS_BETWEEN_PASSES)];
+                    case 5:
+                        _e.sent();
+                        _e.label = 6;
+                    case 6:
+                        w++;
+                        return [3, 4];
+                    case 7:
+                        q++;
+                        return [3, 3];
+                    case 8: return [3, 25];
+                    case 9:
+                        if (typeof stage.sections !== 'number' || stage.sections <= 0 || Math.ceil(stage.sections) !== stage.sections) {
+                            throw new Error("Invalid value for subdivide sections. Must be a positive integer");
+                        }
+                        this.subdivide(stage.sections);
+                        return [3, 25];
+                    case 10:
+                        this.createPass();
+                        completed = 0;
+                        q = 0;
+                        _e.label = 11;
+                    case 11:
+                        if (!(q < this.currentWidth)) return [3, 16];
+                        w = 0;
+                        _e.label = 12;
+                    case 12:
+                        if (!(w < this.currentHeight)) return [3, 15];
+                        completed++;
+                        result = stage.action(this, q, w);
+                        if (typeof result === 'number' && result !== -1)
+                            this.set(q, w, result);
+                        if (!(completed > CELLS_PER_PASS)) return [3, 14];
+                        completed = 0;
+                        this.playheadX = q;
+                        this.playheadY = w;
+                        return [4, delay_1.delay(MILLIS_BETWEEN_PASSES)];
+                    case 13:
+                        _e.sent();
+                        _e.label = 14;
+                    case 14:
+                        w++;
+                        return [3, 12];
+                    case 15:
+                        q++;
+                        return [3, 11];
+                    case 16:
+                        this.destroyPass();
+                        return [3, 25];
+                    case 17:
+                        q = 0;
+                        _e.label = 18;
+                    case 18:
+                        if (!(q < stage.times)) return [3, 23];
+                        if (!(q !== 0)) return [3, 20];
+                        return [4, delay_1.delay(MILLIS_BETWEEN_REPEATS)];
+                    case 19:
+                        _e.sent();
+                        _e.label = 20;
+                    case 20: return [4, this.completeStage(stage.stage)];
+                    case 21:
+                        _e.sent();
+                        _e.label = 22;
+                    case 22:
+                        q++;
+                        return [3, 18];
+                    case 23: return [3, 25];
+                    case 24: throw new Error("Unknown generator stage: " + JSON.stringify(stage));
+                    case 25: return [2];
+                }
+            });
+        });
+    };
+    GeneratorController.prototype.createPass = function () {
+        if (this.isInPass)
+            throw new Error("Can't create multiple pass buffers");
+        this.isInPass = true;
+        this.currentPass = [];
+        for (var q = 0; q < this.currentWidth; q++) {
+            var col = [];
+            this.currentPass.push(col);
+            for (var w = 0; w < this.currentHeight; w++) {
+                col.push(this.current[q][w]);
+            }
+        }
+    };
+    GeneratorController.prototype.destroyPass = function () {
+        if (!this.isInPass)
+            throw new Error("Can't destroy a pass without creating it first");
+        this.isInPass = false;
+        this.current = this.currentPass;
+        this.currentPass = null;
+    };
+    GeneratorController.prototype.subdivide = function (scale) {
+        var newWidth = Math.ceil(this.currentWidth * scale);
+        var newHeight = Math.ceil(this.currentHeight * scale);
+        var newArr = [];
+        for (var q = 0; q < newWidth; q++) {
+            var col = [];
+            newArr.push(col);
+            for (var w = 0; w < newHeight; w++) {
+                col.push(this.current[Math.floor(q / scale)][Math.floor(w / scale)]);
+            }
+        }
+        this.current = newArr;
+        this.currentWidth = newWidth;
+        this.currentHeight = newHeight;
+    };
+    GeneratorController.prototype.set = function (x, y, value, ignoreOutOfBounds) {
+        if (ignoreOutOfBounds === void 0) { ignoreOutOfBounds = false; }
+        if (x < 0 || y < 0 || x >= this.currentWidth || y >= this.currentHeight) {
+            if (ignoreOutOfBounds)
+                return;
+            throw new Error("Coordinates are outside of current map: [" + x + ", " + y + "]");
+        }
+        if (this.isInPass)
+            this.currentPass[x][y] = value;
+        else
+            this.current[x][y] = value;
+    };
+    GeneratorController.prototype.get = function (x, y) {
+        if (SHOULD_WRAP) {
+            x %= this.currentWidth;
+            y %= this.currentHeight;
+            if (x < 0)
+                x = this.currentWidth + x;
+            if (y < 0)
+                y = this.currentHeight + y;
+            return this.current[x][y];
+        }
+        else {
+            if (x < 0 || y < 0 || x >= this.currentWidth || y >= this.currentHeight) {
+                throw new Error("Coordinates are outside of current map: [" + x + ", " + y + "]");
+            }
+            return this.current[x][y];
+        }
+    };
+    GeneratorController.prototype.try = function (x, y, defaultValue) {
+        if (SHOULD_WRAP)
+            return this.get(x, y);
+        else {
+            if (x < 0 || y < 0 || x >= this.currentWidth || y >= this.currentHeight)
+                return defaultValue;
+            return this.current[x][y];
+        }
+    };
+    GeneratorController.prototype.getForRendering = function (x, y) {
+        if (x < 0 || y < 0 || x >= this.currentWidth || y >= this.currentHeight) {
+            throw new Error("Coordinates are outside of current map: [" + x + ", " + y + "]");
+        }
+        try {
+            if (this.isInPass)
+                return this.currentPass[x][y];
+            else
+                return this.current[x][y];
+        }
+        catch (e) {
+            console.log("Failed to retrieve [" + x + ", " + y + "]. isInPass: " + this.isInPass + ". col:", this.current[x], 'typeof x', typeof x);
+            this.broke = true;
+            throw e;
+        }
+    };
+    GeneratorController.prototype.renderImpl = function (adapter) {
+        if (this.broke)
+            return;
+        var _a = this.game.canvasSize, canvasWidth = _a[0], canvasHeight = _a[1];
+        if (!(adapter instanceof engine_1.DefaultGraphicsAdapter))
+            throw new Error('Not implemented');
+        var context = adapter.context;
+        context.strokeStyle = 'black';
+        context.lineWidth = .5;
+        context.imageSmoothingEnabled = true;
+        var scale = Math.min(canvasWidth, canvasHeight) / Math.max(this.currentWidth, this.currentHeight);
+        for (var q = 0; q < this.currentWidth; q++) {
+            for (var w = 0; w < this.currentHeight; w++) {
+                var val = this.getForRendering(q, w);
+                var color = this.currentColors.get(val) || 'red';
+                context.fillStyle = color;
+                context.fillRect(q * scale, w * scale, scale * 1.1, scale * 1.1);
+                if (this.isInPass)
+                    context.strokeRect(q * scale, w * scale, scale, scale);
+            }
+        }
+        if (this.isInPass) {
+            context.fillStyle = 'rgba(255, 0, 0, .8)';
+            context.fillRect(this.playheadX * scale, this.playheadY * scale, scale * 1.1, scale * 1.1);
+            context.fillStyle = 'rgba(255, 0, 0, .4)';
+            context.fillRect((this.playheadX - 4) * scale, (this.playheadY - 4) * scale, scale * 9, scale * 9);
+        }
+        context.fillStyle = 'rgba(0, 0, 0, .6)';
+        context.fillRect(0, 0, 100, 20);
+        context.fillStyle = 'white';
+        context.textBaseline = 'top';
+        context.textAlign = 'left';
+        var stageMsg = "Stage " + this.currentStageIdx + " of " + this.stages.length;
+        if (this.currentStageIdx === this.stages.length)
+            stageMsg = 'Complete';
+        context.fillText(stageMsg, 4, 4);
+    };
+    return GeneratorController;
+}(engine_1.GameObject));
+exports.GeneratorController = GeneratorController;
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var engine_1 = __webpack_require__(5);
+var generator_controller_1 = __webpack_require__(34);
+var default_generator_1 = __webpack_require__(40);
 var StartScene = (function (_super) {
     __extends(StartScene, _super);
     function StartScene() {
@@ -3197,10 +3575,11 @@ var StartScene = (function (_super) {
         if (this.initialized)
             return;
         this.initialized = true;
-        var generator = new generator_controller_1.GeneratorController();
-        this.addObject(generator);
         var camera = this.camera = new engine_1.Camera(this);
         camera.clearColor = 'black';
+        var generator = new generator_controller_1.GeneratorController();
+        this.addObject(generator);
+        generator.generate(default_generator_1.defaultGenerator);
     };
     return StartScene;
 }(engine_1.GameScene));
@@ -3208,7 +3587,24 @@ exports.StartScene = StartScene;
 
 
 /***/ }),
-/* 35 */
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+function delay(millis) {
+    if (typeof millis !== 'number')
+        throw new Error("Invalid type for paramter 'millis': " + millis);
+    return new Promise(function (resolve) {
+        setTimeout(resolve, millis);
+    });
+}
+exports.delay = delay;
+
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -5419,10 +5815,10 @@ function stubFalse() {
 
 module.exports = merge;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36), __webpack_require__(37)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38), __webpack_require__(39)(module)))
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports) {
 
 var g;
@@ -5449,7 +5845,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -5477,36 +5873,84 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var engine_1 = __webpack_require__(12);
-var GeneratorController = (function (_super) {
-    __extends(GeneratorController, _super);
-    function GeneratorController() {
-        return _super.call(this, 'GeneratorController', {
-            renderCamera: 'none'
-        }) || this;
-    }
-    GeneratorController.prototype.renderImpl = function (adapter) {
-        adapter.clear('orange');
+function simplifyLand(seaThreshold, landThreshold, randomOffset) {
+    if (randomOffset === void 0) { randomOffset = 0; }
+    return function (controller, x, y) {
+        var adjacentWater = 0;
+        var defaultValue = controller.get(x, y);
+        for (var q = -1; q <= 1; q++) {
+            for (var w = -1; w <= 1; w++) {
+                adjacentWater += (controller.try(x + q, y + w, defaultValue) === 0 ? 1 : 0);
+            }
+        }
+        if (randomOffset !== 0)
+            adjacentWater += (Math.random() * randomOffset) - (randomOffset / 2);
+        if (adjacentWater > seaThreshold)
+            return 0;
+        else if (adjacentWater < landThreshold)
+            return 1;
+        else
+            return defaultValue;
     };
-    return GeneratorController;
-}(engine_1.GameObject));
-exports.GeneratorController = GeneratorController;
+}
+exports.defaultGenerator = [
+    {
+        type: 'colorize',
+        colors: {
+            0: 'blue',
+            1: 'green'
+        }
+    },
+    {
+        type: 'subdivide',
+        sections: 16
+    },
+    {
+        type: 'randomize',
+        choose: [
+            { value: 0, weight: 1 },
+            { value: 1, weight: 1 }
+        ]
+    },
+    {
+        type: 'pass',
+        action: simplifyLand(6, 3)
+    },
+    {
+        type: 'subdivide',
+        sections: 2
+    },
+    {
+        type: 'pass',
+        action: simplifyLand(4, 5, 6)
+    },
+    {
+        type: 'subdivide',
+        sections: 2
+    },
+    {
+        type: 'pass',
+        action: simplifyLand(4, 5, 5)
+    },
+    {
+        type: 'pass',
+        action: simplifyLand(5, 4, 5)
+    },
+    {
+        type: 'subdivide',
+        sections: 4
+    },
+    {
+        type: 'pass',
+        action: simplifyLand(4, 5, 2)
+    }
+];
 
 
 /***/ })
