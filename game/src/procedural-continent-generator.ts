@@ -1,9 +1,11 @@
 import { Game } from 'engine';
 import { StartScene } from './scenes/start.scene';
 
-export class MyGame extends Game {
+export class ProceduralContinentGenerator extends Game {
     constructor(framesPerSecond = 30) {
-        super(framesPerSecond);
+        super({
+            framesPerSecond: 30
+        });
     }
 
     start() {

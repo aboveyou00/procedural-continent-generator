@@ -1,5 +1,5 @@
 {
-    "name": "a-game",
+    "name": "procedural-continent-generator",
     "version": "0.0.0",
     "description": "A game!",
     "main": "dist/index.js",

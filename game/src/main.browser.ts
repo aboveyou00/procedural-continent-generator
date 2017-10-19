@@ -1,4 +1,4 @@
-import { MyGame } from './my-game';
+import { ProceduralContinentGenerator } from './procedural-continent-generator';
 
-let game = new MyGame();
+let game = new ProceduralContinentGenerator();
 game.start();
