@@ -3184,6 +3184,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var engine_1 = __webpack_require__(12);
+var generator_controller_1 = __webpack_require__(38);
 var StartScene = (function (_super) {
     __extends(StartScene, _super);
     function StartScene() {
@@ -3196,6 +3197,8 @@ var StartScene = (function (_super) {
         if (this.initialized)
             return;
         this.initialized = true;
+        var generator = new generator_controller_1.GeneratorController();
+        this.addObject(generator);
         var camera = this.camera = new engine_1.Camera(this);
         camera.clearColor = 'black';
     };
@@ -5471,6 +5474,39 @@ module.exports = function(module) {
 	}
 	return module;
 };
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var engine_1 = __webpack_require__(12);
+var GeneratorController = (function (_super) {
+    __extends(GeneratorController, _super);
+    function GeneratorController() {
+        return _super.call(this, 'GeneratorController', {
+            renderCamera: 'none'
+        }) || this;
+    }
+    GeneratorController.prototype.renderImpl = function (adapter) {
+        adapter.clear('orange');
+    };
+    return GeneratorController;
+}(engine_1.GameObject));
+exports.GeneratorController = GeneratorController;
 
 
 /***/ })
